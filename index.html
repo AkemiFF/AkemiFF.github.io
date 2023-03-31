@@ -7,7 +7,10 @@
     <!-- Liens vers les fichiers CSS Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
     <!-- Liens vers les fichiers JS Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Lien vers le fichier JS pour l'animation de l'image hexagonale flottante -->
@@ -50,100 +53,35 @@
 
 <body>
     <!-- En-tête -->
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Mon CV</a>
-                </div>
-            </div>
-        </nav>
+    <header class="header">
+<ul class="nav nav-tabs  ">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#service">Service</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+    </li>
+</ul>
     </header>
     <!-- Image hexagonale flottante -->
-    <div class="hexagon" id="hexagon"></div>
-    <!-- Informations personnelles -->
-    <section class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1>OLIVETTE Jason Brad Mirado</h1>
-                <h3>Akemi</h3>
-                <p>Madagascar, Antananarivo, Ankatso</p>
-                <p>Téléphone : <a href="tel:+261389267249">+261389267249</a></p>
-                <p>Email : <a href="mailto:mirado.akemi@gmail.com">mirado.akemi@gmail.com</a></p>
-            </div>
+    <div class="container-fluid row">
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+            <h1>OLIVETTE Jason Brad Mirado</h1>
+            <h3>Akemi</h3>
+            <p>Madagascar, Antananarivo, Ankatso</p>
+            <p>Téléphone : <a href="tel:+261389267249">+261 38 92 672 49</a></p>
+            <p>Email : <a href="mailto:mirado.akemi@gmail.com">mirado.akemi@gmail.com</a></p>
         </div>
-    </section>
-    <!-- Expérience professionnelle -->
-    <section class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Expérience professionnelle</h2>
-                <h4>Nom de l'entreprise - Poste occupé - Date de début - Date de fin</h4>
-                <ul>
-                    <li>Description de la mission 1</li>
-                    <li>Description de la mission 2</li>
-                    <section class="container">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h2>Compétences</h2>
-                                <h4>Compétence 1</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 80%;">
-                                        <span class="sr-only">80% Complete</span>
-                                    </div>
-                                </div>
-                                <h4>Compétence 2</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 70%;">
-                                        <span class="sr-only">70% Complete</span>
-                                    </div>
-                                </div>
-                                <h4>Compétence 3</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 90%;">
-                                        <span class="sr-only">90% Complete</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Formation -->
-                    <section class="container">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h2>Formation</h2>
-                                <h4>Titre de la formation - Ecole/université - Date de début - Date de fin</h4>
-                                <ul>
-                                    <li>Description de la formation 1</li>
-                                    <li>Description de la formation 2</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Boutons de réseaux sociaux -->
-                    <section class="container">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h2>Réseaux sociaux</h2>
-                                <a href="#" class="btn btn-default"><i class="fa fa-facebook"></i> Facebook</a>
-                                <a href="#" class="btn btn-default"><i class="fa fa-twitter"></i> Twitter</a>
-                                <a href="#" class="btn btn-default"><i class="fa fa-linkedin"></i> LinkedIn</a>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Pied de page -->
-                    <footer>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <p>Copyright © Mon CV 2023.
-                                        Tous droits réservés.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                </ul>
-            </div></div></section></body></html>
+        <img class="col-md-3" src="./image.JPG" alt="Jason Brad Mirado">
+        <div class="col-md-1"></div>
+    </div>
+    <!-- Menu -->
+</body>
+</html>

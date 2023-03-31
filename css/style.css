@@ -1,0 +1,38 @@
+/* Style général */
+:root {
+    --bg-color: #1f242b;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-size: 13px;
+}
+
+/* En-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
