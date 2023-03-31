@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    background-color: #373737;
+
+}
+
+.top-side{
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(45deg, rgb(121, 54, 0),#000);
+    display: flex;
+    z-index: 1000;
+    flex-wrap: nowrap;
+}
+.top-side-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    align-items: center;
+    margin-top: 70px;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #c0c0c0;
+    z-index: 1000;
+    flex-wrap: nowrap;
+}
+
+.logo{
+    width: auto;
+    height: 35px;
+}
+
+.logo2{
+    width: auto;
+    height: 45px;
+    margin: 10px;
+
+}
+.topside-txt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:none ;
+    text-decoration:solid;
+    text-decoration: none;
+    transition: all 0.5 ease-in-out 0;
+}
+.info-conso{
+    width: 500px;
+    height: 700px;
+    justify-content: left;
+    display: flex;
+
+}
+
+.toptxt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:none ;
+    text-decoration:solid;
+    text-decoration: none;
+    transition: all 0.5 ease-in-out 0;
+    color: white;
+    font-size: 50px;
+    text-indent: 1.2em;
+    padding-bottom: 20px;
+    position: absolute;
+
+}
+
+.compte-izy{
+    height: 50px;
+    width: 350px;
+    margin: 20px;
+
+    border-radius: 20px;
+    border: 2px dotted #fff;
+    color: #fff;
+    position: relative;
+    height: 80%;
+
+}
+.Service{
+    width: 400px;
+    margin: 50px;
+    margin-top: 80px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    position: relative;
+    height: 80%;
+    display: grid;
+}
+.info-conso-int{
+    width: 400px;
+    margin: 50px;
+    margin-top: 80px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    position: relative;
+    height: 80%;
+    display: grid;
+
+}
+.duo-toppside{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #c0c0c0;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: all 0.5 ease-in-out 0;
+    z-index: 1000;
+    color: rgb(32, 32, 32);
+    
+    text-shadow: 5px 0px 5px #000;
+}
+.duo-toppside:hover{
+    background-color: #808080;
+    transform: scale(1.05);
+    color: #000;
+    border-radius: 3px;
+}
+
+.info-perso{
+    display: grid;
+    color: wheat;
+    text-align: right;
+    right: 0px;
+    margin-left: 80%;
+    
+}
+p{
+    margin: 0;
+}
+
+.body-part{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.image-1{
+    /* animation-delay: 0s; */
+    animation: fade 5s infinite 1s;
+
+}
+.image-2{
+    /* animation-delay: 1s; */
+    animation: fade 5s infinite 2s;
+}
+.image-3{
+    /* animation-delay: 2s; */
+    animation: fade 5s infinite 3s;
+}
+
+.image-font{
+    width: 100%;
+    height: 100px;
+    padding-top: 150px;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.text-bas{
+    margin-left: 70%;
+    width: 400px;
+    font-family: 'Gill Sans' ;
+    font-size: 10px;
+}
+
+.body-int {
+    margin-top: 150px;
+    align-self: center;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border-radius: 10px;
+    width: 500px;
+    height: auto;
+}
+
+.nav-interne{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 30px;
+    z-index: 1;
+    color: #fff;
+    background-color: orangered;
+}
+
+.nav-interne:hover{
+    transform: scale(1.1);
+    transition: all 0.5 ease-in-out 0;
+    color: #000;
+}
+
+
+.nav-interne2{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 10px;
+    color: #fff;
+    background-color: orangered;
+}
+
+.nav-interne2:hover{
+    transform: scale(1.1);
+    transition: all 0.5 ease-in-out 0;
+    color: #000;
+}
+
+input[type="radio"]:checked{
+    background-color: aqua;
+}
