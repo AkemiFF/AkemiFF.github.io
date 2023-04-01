@@ -14,63 +14,53 @@
     <!-- Liens vers les fichiers JS Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Lien vers le fichier JS pour l'animation de l'image hexagonale flottante -->
-    <script src="animation.js"></script>
-    <style>
-        /* Styles pour l'image hexagonale */
-        .hexagon {
-            position: relative;
-            width: 200px;
-            height: 115.47px;
-            margin: 57.74px 0;
-            background-image: url('mon-image.jpg');
-            background-size: cover;
-            background-position: center;
-            cursor: pointer;
-        }
-
-        .hexagon:before,
-        .hexagon:after {
-            content: "";
-            position: absolute;
-            z-index: 1;
-            width: 141.42px;
-            height: 141.42px;
-            -webkit-transform: scaleY(0.5774) rotate(-45deg);
-            transform: scaleY(0.5774) rotate(-45deg);
-            background: inherit;
-            left: 29.2893px;
-        }
-
-        .hexagon:before {
-            top: -70.7107px;
-        }
-
-        .hexagon:after {
-            bottom: -70.7107px;
-        }
-    </style>
 </head>
 
 <body>
     <!-- En-tête -->
     <header class="header">
-<ul class="nav nav-tabs  ">
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#service">Service</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
-    </li>
-</ul>
+        <a href="#" class="logo">AkemiFF</a>
+        <ul class="nav nav-tabs  ">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+        </ul>
     </header>
+    <section class="home container row" id="home">
+        <div class="home-content col-md-7">
+            <h3>Hello, It's me</h3>
+            <h1>Brad Mirado</h1>
+            <h3>And I'm a <span>Programmer</span> <span>Developper</span></h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, repellendus. Eaque voluptatem inventore ad, quasi esse natus.</p>
+            <div class="social-media">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+            <button type="button" class="btn btn-outline-primary">Download CV</button>
+        </div>
+        <div class="home-img col-md-3">
+            <img src="image.JPG" alt="">
+        </div>
+    </section>
+
+
+
+
+
+
     <!-- Image hexagonale flottante -->
-    <div class="container-fluid row">
+    <!-- <div class="container-fluid row">
         <div class="col-md-1"></div>
         <div class="col-md-7">
             <h1>OLIVETTE Jason Brad Mirado</h1>
@@ -81,7 +71,7 @@
         </div>
         <img class="col-md-3" src="./image.JPG" alt="Jason Brad Mirado">
         <div class="col-md-1"></div>
-    </div>
+    </div> -->
     <!-- Menu -->
 </body>
 </html>
