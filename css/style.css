@@ -22,7 +22,7 @@ body {
 /* En-tête */
 header {
     background-color: var(--bg-color);
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -63,8 +63,12 @@ header p {
     background-color: #fff;
 }
 
+.nav-item .active {
+    background: none;
+}
+
 section {
-    min-height: 80vh;
+    min-height: 100vh;
     padding: 8rem 9% 2rem;
 }
 
@@ -136,8 +140,45 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    border: 1px solid var(--main-color);
 }
 
 .btn:hover {
     box-shadow: none;
+    background-color: transparent;
+}
+
+.about-img img {
+    max-width: 35vw;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--second-bg-color);
+}
+
+.heading {
+    text-align: center;
+    font-size: 5.4rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.service h2 {
+    margin-top: 5rem;
 }
