@@ -206,6 +206,10 @@ span {
     border: .2rem solid var(--bg-color);
 }
 
+img {
+    box-shadow: 0 0 2rem var(--main-color);
+}
+
 .service-box box-icon,
 .service-box i {
     font-size: 8rem;
