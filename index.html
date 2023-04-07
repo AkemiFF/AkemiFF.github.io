@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Liens vers les fichiers JS Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="./img/bxl-xing.svg" type="image/x-icon">
@@ -21,9 +21,9 @@
 
 <body>
     <!-- En-tête -->
-    <header class="header">
-        <a href="#" class="logo">AkemiFF</a>
-        <ul class="nav nav-tabs  ">
+    <header class="header row">
+        <a href="#" class="logo col-sm-12">AkemiFF</a>
+        <ul class="nav nav-tabs col-sm-12">
             <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
@@ -34,25 +34,34 @@
                 <a class="nav-link" href="#service">Service</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="#portfolio" tabindex="-1" aria-disabled="true">Portfolio</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
             </li>
+           
         </ul>
     </header>
     <section class="home container row" id="home">
-        <div class="home-content col-md-7">
+        <div class="home-content col-md-7 col-sm-12">
             <h3>Hello, It's me</h3>
             <h1>Brad Mirado</h1>
             <h3>And I'm a <span>Programmer</span> <span>Developper</span></h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, repellendus. Eaque voluptatem inventore ad, quasi esse natus.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aut, repellendus. Eaque voluptatem inventore ad, quasi esse
+                natus.</p>
             <div class="social-media">
                 <a href="https://github.com/AkemiFF"><box-icon type='logo' name='github'></box-icon></a>
-                <a href="https://web.facebook.com/profile.php?id=100087854169286"><box-icon name='facebook' type='logo'></box-icon></a>
+                <a href="https://web.facebook.com/profile.php?id=100087854169286"><box-icon name='facebook'
+                        type='logo'></box-icon></a>
                 <a href="https://www.instagram.com/mirado_ake/"><box-icon name='instagram' type='logo'></box-icon></a>
-                <a href="https://www.youtube.com/channel/UCHUrgV1y72UZkqoczia1_lQ"><box-icon name='youtube' type='logo'></box-icon></a>
+                <a href="https://www.youtube.com/channel/UCHUrgV1y72UZkqoczia1_lQ"><box-icon name='youtube'
+                        type='logo'></box-icon></a>
             </div>
-            <button type="button" class="btn btn-outline-primary">Download CV</button>
+            <button type="button" class="btn btn-outline-primary">Download
+                CV</button>
         </div>
-        <div class="home-img col-md-3">
+        <div class="home-img col-md-3 col-sm-12">
             <img src="image.JPG" alt="">
         </div>
     </section>
@@ -67,7 +76,13 @@
         <div class="about-content col-md-5">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Programmer - Frontend Developer</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum, explicabo ullam illum alias iure quae quos expedita omnis commodi mollitia animi placeat sequi perspiciatis fugiat voluptatem dolor corrupti veritatis aperiam assumenda praesentium? Facilis, earum, maiores consequatur nulla fugit cupiditate rerum deserunt molestiae voluptatibus maxime ab.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Debitis dolorum, explicabo ullam illum alias iure quae quos
+                expedita omnis commodi mollitia animi placeat sequi
+                perspiciatis fugiat voluptatem dolor corrupti veritatis
+                aperiam assumenda praesentium? Facilis, earum, maiores
+                consequatur nulla fugit cupiditate rerum deserunt molestiae
+                voluptatibus maxime ab.</p>
             <button type="button" class="btn btn-outline-primary">Read More</button>
         </div>
     </section>
@@ -78,25 +93,92 @@
     <section class="service" id="service">
         <h2 class="heading">Our <span>Service</span></h2>
         <div class="service-container">
-            <div class="service-box col-md-4 col-sm-12">
+            <div class="service-box col-md-4 col-sm-6">
                 <i class='bx bxl-css3'></i>
                 <h3>Web Designer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque perferendis dicta et! Non labore sunt voluptate vero dolores. Quia!</p>
-                <button type="button" class="btn btn-outline-primary">Read More</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae itaque perferendis dicta et! Non labore sunt
+                    voluptate vero dolores. Quia!</p>
+                <button type="button" class="btn btn-outline-primary">Read
+                    More</button>
             </div>
-            <div class="service-box col-md-4 col-sm-12">
+            <div class="service-box col-md-4 col-sm-6">
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Developer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque perferendis dicta et! Non labore sunt voluptate vero dolores. Quia!</p>
-                <button type="button" class="btn btn-outline-primary">Read More</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae itaque perferendis dicta et! Non labore sunt
+                    voluptate vero dolores. Quia!</p>
+                <button type="button" class="btn btn-outline-primary">Read
+                    More</button>
             </div>
             <div class="service-box col-md-4 col-sm-12">
                 <i class='bx bx-palette'></i>
                 <h3>Graphic Designer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque perferendis dicta et! Non labore sunt voluptate vero dolores. Quia!</p>
-                <button type="button" class="btn btn-outline-primary">Read More</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae itaque perferendis dicta et! Non labore sunt
+                    voluptate vero dolores. Quia!</p>
+                <button type="button" class="btn btn-outline-primary">Read
+                    More</button>
             </div>
         </div>
     </section>
+
+    <!-- Portfolio - section - design -->
+
+    <section id="portfolio" class="portfolio">
+        <h2 class="heading">Lastest <span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./img/add1.jpg" alt="Project">
+                <div class="portfolio-layer">
+                    <h4>Web Designer</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./img/add2.jpg" alt="Project">
+                <div class="portfolio-layer">
+                    <h4>Web Designer</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./img/add3.jpg" alt="Project">
+                <div class="portfolio-layer">
+                    <h4>Web Designer</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./img/add4.jpg" alt="Project">
+                <div class="portfolio-layer">
+                    <h4>Web Designer</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./img/add5.jpg" alt="Project">
+                <div class="portfolio-layer">
+                    <h4>Web Designer</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./img/add6.jpg" alt="Project">
+                <div class="portfolio-layer">
+                    <h4>Web Designer</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
+                    <a href=""><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
+
 </html>
