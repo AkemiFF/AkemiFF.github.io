@@ -1,8 +1,9 @@
 /* Style général */
 :root {
-    --bg-color: #1f242b;
-    --second-bg-color: #323946;
+    --bg-color: #2b1f1f;
+    --second-bg-color: #463232;
     --text-color: #fff;
+    --text-color-3: #000;
     --text-color-2: #F2921D;
     --main-color: #F99417;
 }
@@ -15,8 +16,22 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
+    z-index: 10;
+    margin: 0;
     background-color: var(--bg-color);
     font-size: 13px;
+}
+
+.bg-image {
+    background: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -100;
+    margin-top: 8rem;
+    width: 100%;
+    height: 62rem;
+    position: fixed;
+    background-repeat: no-repeat;
 }
 
 /* En-tête */
@@ -73,6 +88,7 @@ header p {
 section {
     min-height: 100vh;
     padding: 8rem 9% 2rem;
+    z-index: 10;
 }
 
 .home {
@@ -279,6 +295,7 @@ img {
     flex-direction: column;
     text-align: center;
     padding: 0 4rem;
+    color: var(--text-color-3);
     transform: translateY(100%);
     transition: .5s ease;
 }
@@ -289,10 +306,11 @@ img {
 
 .portfolio-layer h4 {
     font-size: 3rem;
+    font-weight: 600;
 }
 
 .portfolio-layer p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin: .3rem 0 1rem;
 }
 
@@ -302,15 +320,63 @@ img {
     align-items: center;
     width: 5rem;
     height: 5rem;
-    color: var(--text-color);
+    color: var(--text-color-3);
     border-radius: 50%;
 }
 
 .portfolio-layer a i {
     font-size: 2rem;
-    color: var(--second-bg-color);
+    color: var(--bg-color);
 }
 
+
+.ability {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ability h4 {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.bg-semi {
+    background-color: rgb(98, 125, 0) !important;
+}
+
+.bg-success {
+    background-color: rgb(132, 169, 0) !important;
+}
+
+.progress {
+    height: 2.5rem;
+    font-size: 2rem;
+    border-radius: 50px;
+    margin: 2.5rem 0;
+    background-color: #ccc;
+    /* border: .5px solid var(--bg-color); */
+    box-shadow: 0 0 3rem var(--main-color);
+    transition: .5s ease;
+    cursor: pointer;
+    color: #000;
+}
+
+.progress:hover {
+    box-shadow: 0 0 4rem var(--text-color-3);
+}
+
+.progressbar {
+    color: var(--text-color-3);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+}
 
 @media screen and (max-width: 400px) {
 
