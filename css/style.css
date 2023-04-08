@@ -407,7 +407,7 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* background-color: #fff; */
+        background-color: #fff;
         width: 100%;
     }
 
