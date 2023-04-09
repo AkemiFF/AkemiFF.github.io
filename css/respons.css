@@ -44,6 +44,14 @@
 
     .home img {
         min-width: 40vh;
+
+    }
+
+    .home,
+    .about {
+        display: flex;
+
+        flex-direction: column;
     }
 
     .home-content {
