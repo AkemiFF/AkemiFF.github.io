@@ -1,0 +1,150 @@
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        height: 5rem;
+        /* background-color: aliceblue; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        position: absolute;
+        right: 0;
+        transform: translateY(2rem);
+        z-index: 100;
+        justify-content: end;
+        text-align: right;
+        align-items: end;
+        width: 100%;
+        text-decoration: none;
+        transition: 1s ease;
+    }
+
+    header:hover .logo {
+        transform: translateY(5rem);
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .nav-item a {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    section {
+        min-height: 100vh;
+        padding: 8rem 9% 2rem;
+    }
+
+    .home img {
+        min-width: 40vh;
+    }
+
+    .home-content {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+
+    .social-media a {
+        margin-top: 1rem;
+    }
+
+    .btn {
+        height: 4rem;
+        font-size: 1.3rem;
+        text-align: center;
+        width: 15rem;
+        margin-bottom: 2rem;
+    }
+
+    .home-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-image {
+        background: url(../img/bg.png);
+        background-position: center;
+        background-size: cover;
+        z-index: -100;
+        margin-top: 8rem;
+        width: 100%;
+        height: 62rem;
+        position: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .about-img {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .about-img img {
+        min-width: 45vw;
+
+    }
+
+    .about-content,
+    .about-content .heading {
+        text-align: center;
+    }
+
+    .about-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-content p {
+        font-size: .9rem;
+    }
+
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heading {
+        font-size: 3.5rem;
+    }
+
+    .portfolio-layer h4 {
+        font-size: 1rem;
+    }
+
+    .portfolio-layer p {
+        font-size: .7rem;
+        width: 100%;
+    }
+
+    .portfolio-layer a i {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-layer a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+
+}

@@ -296,7 +296,7 @@ img {
     text-align: center;
     padding: 0 4rem;
     color: var(--text-color-3);
-    transform: translateY(100%);
+    transform: translateY(120%);
     transition: .5s ease;
 }
 
@@ -382,68 +382,4 @@ img {
     top: 0;
     width: 100%;
     justify-content: center;
-}
-
-@media screen and (max-width: 400px) {
-
-
-    .header {
-        flex-wrap: wrap;
-    }
-
-    .header h1 {
-        font-size: 1rem;
-    }
-
-    .header p {
-        font-size: 8px;
-    }
-
-    .header .nav {
-        display: flex;
-        align-items: center;
-
-        scale: 1.5;
-        justify-content: center;
-    }
-
-    .header .logo {
-        display: flex;
-        align-items: center;
-        margin: 2rem;
-        scale: 1.5;
-        justify-content: center;
-    }
-
-    #home {
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* background-color: #fff; */
-        width: 100%;
-    }
-
-    .col-sm-12 {
-        width: 100%;
-
-    }
-
-    .home-content {
-        margin: 3rem 2rem;
-
-    }
-
-    .service h2 {
-        margin-top: 10rem;
-    }
-
-    .about {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-img {
-        margin: 0;
-    }
 }
