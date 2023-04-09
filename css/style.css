@@ -172,8 +172,9 @@ span {
 }
 
 .btn:hover {
-    box-shadow: none;
-    background-color: transparent;
+    box-shadow: 0 0 0 1rem var(--second-bg-color);
+    border: .5px solid var(--main-color);
+    background-color: var(--main-color);
 }
 
 .about-img {
