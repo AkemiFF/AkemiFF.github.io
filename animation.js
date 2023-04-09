@@ -1,24 +1,39 @@
-// Récupération de l'élément image
-var img = document.getElementById("hexagon");
+// récupérer les éléments span dans le DOM
+const spans = document.querySelectorAll('.home-content h3 span');
+const span1 = document.querySelector('.ability span');
+const span2 = document.querySelector('.portfolio span');
+const span3 = document.querySelector('.service span');
+// initialiser l'index et le sens de l'affichage des spans
+let spanIndex = 0;
+let spanDirection = 1;
 
-// Initialisation des variables de position
-var pos = 0;
-var dir = 1;
-
-// Fonction d'animation
-function animate() {
-    // Déplacement de l'image
-    pos += dir;
-    img.style.top = pos + "px";
-
-    // Inversion de la direction si l'image atteint les bords
-    if (pos > 50 || pos < -50) {
-        dir = -dir;
-    }
-
-    // Demande d'animation de la fonction à chaque frame
-    window.requestAnimationFrame(animate);
+// fonction pour afficher les lettres d'un span lettre par lettre
+function animateSpan(span) {
+    const letters = span.textContent.split('');
+    span.textContent = '';
+    letters.forEach((letter, index) => {
+        setTimeout(() => span.textContent += letter, 100 * index);
+    });
 }
 
-// Démarrage de l'animation
-animate();
+// fonction pour alterner l'affichage des deux spans en boucle
+function loopSpans() {
+    animateSpan(span1);
+    animateSpan(span2);
+    animateSpan(span3);
+    animateSpan(spans[spanIndex]);
+    spanIndex += spanDirection;
+    if (spanIndex >= spans.length || spanIndex < 0) {
+        spanDirection = -spanDirection;
+        spanIndex += spanDirection;
+    }
+    setTimeout(loopSpans, 1500);
+}
+
+loopSpans();
+
+
+
+
+
+
