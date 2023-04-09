@@ -317,18 +317,24 @@ img {
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
+    text-decoration: none;
     align-items: center;
     width: 5rem;
     height: 5rem;
-    color: var(--text-color-3);
+    background: var(--text-color);
     border-radius: 50%;
+    transition: .8 ease;
 }
 
 .portfolio-layer a i {
-    font-size: 2rem;
-    color: var(--bg-color);
+    font-size: 3rem;
+    color: var(--second-bg-color);
+    transition: .8 ease;
 }
 
+.portfolio-layer a:hover i {
+    transform: scale(1.2);
+}
 
 .ability {
     display: flex;
@@ -383,7 +389,14 @@ img {
 
     .header {
         flex-wrap: wrap;
+    }
 
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .header p {
+        font-size: 8px;
     }
 
     .header .nav {
@@ -407,7 +420,7 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #fff;
+        /* background-color: #fff; */
         width: 100%;
     }
 
