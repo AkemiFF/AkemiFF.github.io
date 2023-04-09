@@ -146,5 +146,23 @@
         height: 2.5rem;
     }
 
+    .service-box box-icon,
+    .service-box i {
+        font-size: 4rem;
+    }
+
+    .service-box h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-box p {
+        font-size: .9rem;
+    }
+
+    .service-container .service-box {
+        flex: 1 2 10rem;
+        padding: 1rem;
+        margin: .5rem .1rem;
+    }
 
 }
