@@ -32,8 +32,22 @@ function loopSpans() {
 
 loopSpans();
 
+const wifi_logo = document.querySelector("h1 img");
+countdown = setInterval('img_change()', 700);
+let i = 0;
 
+function img_change() {
+    wifi_logo.setAttribute("src", "./img/bx-wifi-" + i + ".svg");
+    console.log(i)
 
+    i++;
+    if (i == 4) {
+        i = 0;
+    }
+}
 
+// function img_loop_changing() {
 
+// }
 
+// img_loop_changing()

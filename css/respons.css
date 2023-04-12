@@ -10,12 +10,12 @@
     .logo {
         position: absolute;
         right: 0;
-        transform: translateY(8rem);
+        transform: translateY(4rem);
         z-index: 100;
         justify-content: end;
         text-align: right;
         align-items: end;
-        width: 100%;
+        width: 6rem;
         text-decoration: none;
         transition: 1s ease;
     }
@@ -30,6 +30,11 @@
 
 
 
+    header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     header h1 {
         font-size: 2.5rem;
@@ -85,11 +90,12 @@
 
     .btn {
         height: 4rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-align: center;
         width: 15rem;
         margin-bottom: 2rem;
     }
+
 
     .home-img {
         display: flex;
