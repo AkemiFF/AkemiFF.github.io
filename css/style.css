@@ -28,7 +28,9 @@ body {
     background-size: cover;
     z-index: -100;
     margin-top: 8rem;
+    /* margin-top: 25rem; */
     width: 100%;
+    /* height: 90rem; */
     height: 62rem;
     position: fixed;
     background-repeat: no-repeat;
@@ -463,11 +465,13 @@ textarea {
 
 
 .mb-3 {
-    width: 20rem;
+    width: 32rem;
+    /* height: 10rem; */
 }
 
 .mb-3 textarea {
-    width: 28rem;
+    width: 37rem;
+    height: 23rem;
 }
 
 footer {
@@ -492,4 +496,23 @@ h1 img {
     width: 8rem;
     background-color: var(--main-color);
     border-radius: 50%;
+}
+
+.floater-menu {
+    /* background-color: #000; */
+    position: fixed;
+    z-index: 1000;
+    margin: 15% 0;
+    width: 8rem;
+    height: 10rem;
+}
+
+.floater-menu .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-content .social-media {
+    opacity: 0;
 }
