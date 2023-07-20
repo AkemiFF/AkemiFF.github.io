@@ -41,6 +41,35 @@
         transition: 1s ease;
     }
 
+    .pie-wrapper {
+        height: .7em;
+        width: .7em;
+        float: left;
+        margin: 10px 15px;
+        position: relative;
+    }
+
+    .pie-wrapper--solid .label {
+        background: transparent;
+    }
+
+    .pie-wrapper:nth-child(3n+1) {
+        /* clear: both; */
+    }
+
+    .charts-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .pie-wrapper .label {
+        background: var(--bg-complete);
+        font-size: 0.15em;
+    }
+
     .home-content .social-media {
         opacity: 1;
     }
@@ -76,12 +105,17 @@
 
     section {
         min-height: 100vh;
+        width: 100%;
         padding: 8rem 9% 2rem;
     }
 
     .home img {
         min-width: 5vh;
 
+    }
+
+    .service-container .service-box {
+        background-color: #463232ac;
     }
 
     .home,
@@ -152,7 +186,7 @@
     }
 
     .bg-image {
-        background: url(../img/bg-phone.png);
+        background: url(../img/bg-phone.jpeg);
         background-position: center;
         background-size: cover;
         z-index: -100;
@@ -282,7 +316,8 @@
     }
 
     .home-content p {
-        background-color: #2400006d;
+
+        background-color: #2400008f;
         padding: 1.5% 2%;
         border-radius: 20px;
 

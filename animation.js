@@ -38,8 +38,6 @@ let i = 0;
 
 function img_change() {
     wifi_logo.setAttribute("src", "./img/bx-wifi-" + i + ".svg");
-    console.log(i)
-
     i++;
     if (i == 4) {
         i = 0;

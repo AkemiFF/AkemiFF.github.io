@@ -5,24 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akemi Profile</title>
-    <!-- Liens vers les fichiers CSS Bootstrap -->
+    <!-- Liens vers les fichiers CSS Bootstrap --><!--
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>-->
+
     <link rel="stylesheet" href="./css/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="./css/boxicons/css/boxicons.css">
-    <!-- <script src="./css/boxicons/"></script> -->
-
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ProgressBar.css">
     <link rel="stylesheet" href="./css/respons.css">
-    <!-- Liens vers les fichiers JS Bootstrap -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
     <link rel="shortcut icon" href="./img/Sans titre.png" type="image/x-icon">
-    <!-- Lien vers le fichier JS pour l'animation de l'image hexagonale flottante -->
 </head>
 
 <body>
@@ -82,7 +79,7 @@
                 <a href="https://www.youtube.com/channel/UCHUrgV1y72UZkqoczia1_lQ"><box-icon name='youtube'
                         type='logo'></box-icon></a>
             </div>
-            <button type="button" class="btn btn-outline-primary">Download
+            <button type="button" class="btn btn-outline-primary" onclick="window.print">Download
                 CV <div class="spinner-border text-primary" role="status">
                     <span class="visually-hidden">Loading...</span>
                 </div></button>
@@ -94,7 +91,7 @@
 
     <!-- about -->
 
-    <section class="about row" id="about">
+    <section class="about" id="about">
         <div class="about-img col-md-3 col-sm-12 col-xs-12">
             <img src="image.JPG" alt="">
         </div>
@@ -113,19 +110,85 @@
 
     <section id="ability" class="ability">
         <h4>My <span>Ability</span></h4>
-        <div class="progressbar">
+        <div class="set-size charts-container">
+            <!-- <div class="pie-wrapper progress-30">
+                <span class="label">30</span>
+                <div class="pie">
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                </div>
+            </div>
+
+            <div class="pie-wrapper progress-60">
+                <span class="label">60</span>
+                <div class="pie">
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                </div>
+            </div>
+
+            <div class="pie-wrapper progress-90">
+                <span class="label">90</span>
+                <div class="pie">
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                </div>
+            </div> -->
+
+            <div class="pie-wrapper pie-wrapper--solid progress-95">
+                <span class="label"><span class="smaller">HTML</span></span>
+            </div>
+
+            <div class="pie-wrapper pie-wrapper--solid progress-88">
+                <span class="label">CSS</span>
+            </div>
+
+            <div class="pie-wrapper pie-wrapper--solid progress-88">
+                <span class="label">JS</span>
+            </div>
+            <div class="pie-wrapper pie-wrapper--solid progress-45">
+                <span class="label">PHP</span>
+            </div>
+
+            <div class="pie-wrapper pie-wrapper--solid progress-88">
+                <span class="label">Python</span>
+            </div>
+
+            <div class="pie-wrapper pie-wrapper--solid progress-25">
+                <span class="label">Ajax</span>
+            </div>
+
+            <div class="pie-wrapper pie-wrapper--solid progress-95">
+                <span class="label">GIT</span>
+            </div>
+            <div class="pie-wrapper pie-wrapper--solid progress-45">
+                <span class="label">NodeJS</span>
+            </div>
+
+            <div class="pie-wrapper pie-wrapper--solid progress-75">
+                <span class="label">SQL</span>
+            </div>
+
+            <div class="pie-wrapper pie-wrapper--solid progress-75">
+                <span class="label">Django</span>
+            </div>
+        </div>
+        <!-- <div class="progressbar">
             <div class="progress">
                 <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
-                    style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"><span>HTML</span></div>
+                    style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"><span>HTML&CSS</span>
+                </div>
             </div>
 
             <div class="progress">
                 <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
-                    style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span>CSS</span></div>
+                    style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span><i
+                            class="fa fa-database" aria-hidden="true">Database</i></span>
+                </div>
             </div>
             <div class="progress">
                 <div class="progress-bar bg-semi progress-bar-striped progress-bar-animated" role="progressbar"
-                    style="width: 67%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"><span>MySQL</span>
+                    style="width: 67%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"><span>Django</span>
                 </div>
             </div>
             <div class="progress">
@@ -136,14 +199,15 @@
 
             <div class="progress">
                 <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" role="progressbar"
-                    style="width: 47%;" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100"><span>PHP</span></div>
+                    style="width: 47%;" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100"><span>PHP&JS</span>
+                </div>
             </div>
 
             <div class="progress">
                 <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
                     style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>JavaScript</span>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -179,24 +243,24 @@
             <div class="portfolio-box">
                 <img src="./img/add4.jpg" alt="Project">
                 <div class="portfolio-layer">
-                    <h4>Web Designer</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
+                    <h4>E-Commerce</h4>
+                    <p>E-Commerce application with Django and NodeJs</p>
                     <a href=""><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="./img/add5.jpg" alt="Project">
                 <div class="portfolio-layer">
-                    <h4>Web Designer</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
+                    <h4>ToDo Ap</h4>
+                    <p>A ToDo application project with Django</p>
                     <a href=""><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="./img/add6.jpg" alt="Project">
                 <div class="portfolio-layer">
-                    <h4>Web Designer</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
+                    <h4>Portfolio</h4>
+                    <p>Updating my porfolio</p>
                     <a href=""><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
@@ -245,35 +309,39 @@
     </section>
 
     <section class="footer" id="footer">
-        <h2 class="heading">Contact <span>Us</span></h2>
-        <form class="contact col-md-12">
+        <div class="col-md-11 container">
+            <h2 class="heading">Contact <span>Us</span></h2>
+            <form class="contact col-md-12">
+                <div class="part-form-1">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted">Your name</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mail" class="form-label"><i class="fa fa-mail-forward"
+                                aria-hidden="true"></i>Mail</label>
+                        <input type="email" class="form-control" name="mail" id="" aria-describedby="helpId"
+                            placeholder="">
+                        <small id="helpId" class="form-text text-muted">Add your Email</small>
+                    </div>
+                </div>
 
-            <div class="mb-3">
-                <label for="" class="form-label">Name</label>
-                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-                <small id="helpId" class="form-text text-muted">Your name</small>
-            </div>
-            <div class="mb-3">
-                <label for="mail" class="form-label"><i class="fa fa-mail-forward" aria-hidden="true"></i>Mail</label>
-                <input type="email" class="form-control" name="mail" id="" aria-describedby="helpId" placeholder="">
-                <small id="helpId" class="form-text text-muted">Add your Email</small>
-            </div>
-
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" cols="30" cols="30" rows="10"></textarea>
-            </div>
-            <input type="submit" class="btn btn-outline-primary" value="Send">
-        </form>
-
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" cols="30" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" class="btn btn-outline-primary" value="Send">
+            </form>
+        </div>
         <footer class="col-md-12">
 
-            <h2><img src="./img/logo_3.png" alt=""> by <a href="https://github.com/AkemiFF"><span>AkemiFF</span></a>
+            <h2><img src="./img/logo_3.png" alt="logo"> by <a href="https://github.com/AkemiFF"><span>AkemiFF</span></a>
             </h2>
 
 
             <h2>
-                <img src="./img/image (5).png" alt=""> by <a href="https://github.com/AkemiFF"><span>AkemiFF</span>
+                <img src="./img/image (5).png" alt="logo"> by <a href="https://github.com/AkemiFF"><span>AkemiFF</span>
                 </a>
             </h2>
 
