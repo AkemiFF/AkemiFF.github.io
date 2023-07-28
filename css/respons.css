@@ -53,10 +53,11 @@
         background: transparent;
     }
 
+    /*
     .pie-wrapper:nth-child(3n+1) {
-        /* clear: both; */
+      clear: both; 
     }
-
+   */
     .charts-container {
         width: 100%;
         display: flex;
