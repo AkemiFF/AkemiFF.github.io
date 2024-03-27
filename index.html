@@ -5,29 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akemi Profile</title>
-    <!-- Liens vers les fichiers CSS Bootstrap --><!--
+    <!-- Liens vers les fichiers CSS Bootstrap --><!---->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://atisa.gumroad.com/l/boxicons">
+    <link rel="stylesheet" href="./Assets/css/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="./Assets/css/boxicons/css/boxicons.css">
+    <link rel="stylesheet" href="./Assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/ProgressBar.css">
+    <link rel="stylesheet" href="./Assets/css/respons.css">
 
-    <link rel="stylesheet" href="./css/boxicons/css/boxicons.min.css">
-    <link rel="stylesheet" href="./css/boxicons/css/boxicons.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/ProgressBar.css">
-    <link rel="stylesheet" href="./css/respons.css">
-
-    <link rel="shortcut icon" href="./img/Sans titre.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Assets/img/Sans titre.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="bg-image"></div>
     <!-- En-tête -->
     <header class="header">
-        <a href="#" class="logo col-md-6 col-sm-12 col-xs-12 "><img src="./img/logo_6.png" alt="" srcset=""></a>
-        <!-- <nav class="navbar navbar-expand-md"> -->
+        <img src="./Assets/img/logo.png" alt="" srcset="" class="logo col-md-1">
         <ul class="nav nav-tabs  col-md-6 col-sm-12 col-xs-12 text-center">
             <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#home">Home</a>
@@ -45,8 +44,6 @@
                 <a class="nav-link" href="#service">Service</a>
             </li>
         </ul>
-        <!-- </nav> -->
-
     </header>
 
 
@@ -66,26 +63,30 @@
     <section class="home container row" id="home">
         <div class="home-content col-md-7 col-sm-12  col-xs-12">
             <h3>Hello, It's me</h3>
-            <h1>Brad Mirado <img src="./img/bx-wifi-3.svg" alt=""></h1>
+            <h1>Brad Mirado <img src="./Assets/img/svg/bx-wifi-3.svg" alt=""></h1>
             <h3>And I'm a <span>Programmer</span> <span>Developper</span></h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam nesciunt consequuntur eius, a culpa eos in
                 illum esse quam doloremque neque, explicabo recusandae odit? Repudiandae aliquam similique est
                 voluptatum quibusdam?</p>
             <div class="social-media">
-                <a href="https://github.com/AkemiFF"><box-icon type='logo' name='github'></box-icon></a>
-                <a href="https://web.facebook.com/profile.php?id=100087854169286"><box-icon name='facebook'
-                        type='logo'></box-icon></a>
-                <a href="https://www.instagram.com/mirado_ake/"><box-icon name='instagram' type='logo'></box-icon></a>
-                <a href="https://www.youtube.com/channel/UCHUrgV1y72UZkqoczia1_lQ"><box-icon name='youtube'
-                        type='logo'></box-icon></a>
+                <a href="https://github.com/AkemiFF">
+                    <box-icon type='logo' style="color: white;" name='github'></box-icon>
+                </a>
+                <a href="https://web.facebook.com/profile.php?id=100087854169286">
+                    <box-icon name='facebook' style="color: white;" type='logo'></box-icon>
+                </a>
+                <a href="https://www.instagram.com/mirado_ake/">
+                    <box-icon name='instagram' style="color: white;" type='logo'></box-icon>
+                </a>
+                <a href="https://www.youtube.com/channel/UCHUrgV1y72UZkqoczia1_lQ">
+                    <box-icon name='youtube' style="color: white;" type='logo'></box-icon>
+                </a>
             </div>
             <button type="button" class="btn btn-outline-primary" onclick="window.print">Download
-                CV <div class="spinner-border text-primary" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div></button>
+                CV</button>
         </div>
         <div class="home-img col-md-3 col-xs-12 col-sm-12">
-            <img src="im_2.jpg" alt="">
+            <img src="./Assets/img/Me/profil.jpg" alt="">
         </div>
     </section>
 
@@ -93,7 +94,7 @@
 
     <section class="about" id="about">
         <div class="about-img col-md-3 col-sm-12 col-xs-12">
-            <img src="image.JPG" alt="">
+            <img src="./Assets/img/me/image.jpg" alt="">
         </div>
         <div class="col-md-3 col-sm-12 col-xs-12"></div>
         <div class="about-content col-md-5 col-xs-12">
@@ -102,7 +103,7 @@
             <p>Je suis étudiant à ESMIA, Mahamasina, Antananarivo, Madagascar;
             <p>Mon étude concerne la programmation et la
                 dévellopement Web, et je suit la formation en IRD (Informatique Risque et Décision)
-                , et je suis actuellement en L1</p>
+                , et je suis actuellement en L3</p>
             </p>
             <button type="button" class="btn btn-outline-primary">Read More</button>
         </div>
@@ -217,7 +218,7 @@
         <h2 class="heading">Lastest <span>Project</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="./img/add1.jpg" alt="Project">
+                <img src="./Assets/img/Projects/add1.jpg" alt="Project">
                 <div class="portfolio-layer">
                     <h4>Web Designer</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
@@ -225,7 +226,7 @@
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="./img/add2.jpg" alt="Project">
+                <img src="./Assets/img/Projects/add2.jpg" alt="Project">
                 <div class="portfolio-layer">
                     <h4>Web Designer</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
@@ -233,7 +234,7 @@
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="./img/add3.jpg" alt="Project">
+                <img src="./Assets/img/Projects/add3.jpg" alt="Project">
                 <div class="portfolio-layer">
                     <h4>Web Designer</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, magnam?</p>
@@ -241,7 +242,7 @@
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="./img/add4.jpg" alt="Project">
+                <img src="./Assets/img/Projects/add4.jpg" alt="Project">
                 <div class="portfolio-layer">
                     <h4>E-Commerce</h4>
                     <p>E-Commerce application with Django and NodeJs</p>
@@ -249,7 +250,7 @@
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="./img/add5.jpg" alt="Project">
+                <img src="./Assets/img/Projects/add5.jpg" alt="Project">
                 <div class="portfolio-layer">
                     <h4>ToDo Ap</h4>
                     <p>A ToDo application project with Django</p>
@@ -257,7 +258,7 @@
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="./img/add6.jpg" alt="Project">
+                <img src="./Assets/img/Projects/add6.jpg" alt="Project">
                 <div class="portfolio-layer">
                     <h4>Portfolio</h4>
                     <p>Updating my porfolio</p>
@@ -323,7 +324,7 @@
                                 aria-hidden="true"></i>Mail</label>
                         <input type="email" class="form-control" name="mail" id="" aria-describedby="helpId"
                             placeholder="">
-                        <small id="helpId" class="form-text text-muted">Add your Email</small>
+                        <small id="helpId" class="form-text text-muted">Projects/add your Email</small>
                     </div>
                 </div>
 
@@ -334,21 +335,22 @@
                 <input type="submit" class="btn btn-outline-primary" value="Send">
             </form>
         </div>
+
+
         <footer class="col-md-12">
-
-            <h2><img src="./img/logo_3.png" alt="logo"> by <a href="https://github.com/AkemiFF"><span>AkemiFF</span></a>
-            </h2>
-
-
+            <div>
+                <p>Créé par <a href="https://github.com/AkemiFF">AkemiKun</a> </p>
+                <i class="fa fa-copyright" aria-hidden="true">&#169; 2024 AkemiKey, Brad.</i>
+            </div>
             <h2>
-                <img src="./img/image (5).png" alt="logo"> by <a href="https://github.com/AkemiFF"><span>AkemiFF</span>
+                <a href="https://github.com/AkemiFF">
+                    <img src="./Assets/img/logo.png" alt="logo"> by <span>AkemiKey</span>
                 </a>
             </h2>
-
         </footer>
     </section>
 
-    <script src="animation.js"></script>
+    <script src="./Assets/js/animation.js"></script>
 
 </body>
 
