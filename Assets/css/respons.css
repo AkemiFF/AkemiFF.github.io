@@ -184,7 +184,7 @@
     }
 
     .bg-image {
-        background: url(../img/bg-phone.jpeg);
+        /* background: url(../img/bg-phone.jpeg); */
         background-position: center;
         background-size: cover;
         z-index: -100;
@@ -193,6 +193,7 @@
         height: 62rem;
         position: fixed;
         background-repeat: no-repeat;
+        overflow: hidden;
     }
 
     header a img {
