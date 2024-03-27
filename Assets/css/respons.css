@@ -1,11 +1,4 @@
-@media only screen and (min-width: 1368px) {
-
-
-    .bg-image {
-        margin-top: 10rem;
-        height: 90rem;
-    }
-}
+@media only screen and (min-width: 1368px) {}
 
 @media only screen and (min-height:926px) {
     section {
@@ -316,11 +309,22 @@
         width: 7rem;
     }
 
-    .home-content p {
+    #footer a {
+        font-size: 15px;
+    }
 
-        background-color: #2400008f;
-        padding: 1.5% 2%;
-        border-radius: 20px;
+    #footer img {
+        width: 1.5em;
+    }
 
+    .btn {
+        width: 12em;
+        height: 5em;
+        margin: 0;
+        padding: .5em;
+    }
+
+    .logo {
+        display: none;
     }
 }
