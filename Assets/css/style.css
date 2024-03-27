@@ -70,7 +70,7 @@ header a:hover img {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2em;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -124,7 +124,7 @@ section {
 }
 
 .home-content h3 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -142,6 +142,8 @@ span {
 }
 
 .home-content h1 {
+    color: var(--main-color);
+    text-indent: 1em;
     line-height: 1.3;
     font-size: 5.6rem;
     font-weight: 700;
@@ -169,6 +171,7 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -184,9 +187,9 @@ span {
 }
 
 .btn:hover {
-    box-shadow: 0 0 0 1rem var(--second-bg-color);
-    border: .5px solid var(--main-color);
+    box-shadow: 0 0 1rem var(--red-neon);
     background-color: var(--main-color);
+    color: #fff;
 }
 
 .about-img {
