@@ -1,5 +1,9 @@
 @media only screen and (min-width: 1368px) {}
 
+.logo {
+    max-width: 4em;
+}
+
 @media only screen and (min-height:926px) {
     section {
         min-height: 150vh;
